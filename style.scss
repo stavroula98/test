@@ -1,0 +1,36 @@
+// Import variables and mixins.
+@import "assets/scss/abstracts/abstracts";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "assets/scss/base/base";
+
+.full-container{
+    // max-width: $site__container_small;
+    // padding-left: 30px;
+	// padding-right: 30px;
+    margin:0 auto;
+    height:100vh;
+    .brand{
+        display:flex;
+        justify-content:center;
+        margin-top:min(max(43px, 43/768 * 100vw), 43px);
+        gap:27px;
+        h3 {
+            font-size:25px;
+            font-family:'Orchard';
+        }
+    }
+    .title{
+        margin-top:20vh;
+        img {
+            max-width: calc(100vw - 20px);
+        }
+    }
+}
+
+.a-small-container {
+    height:100vh;
+    background:red;
+}
